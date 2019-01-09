@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{166:function(e,n,t){"use strict";t.r(n);var s={name:"me",data:function(){return{hello:"233"}}},o=t(0),i=Object(o.a)(s,function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("\n    show demo "+this._s(this.hello)+"\n")])},[],!1,null,null,null);i.options.__file="show.vue";n.default=i.exports}}]);

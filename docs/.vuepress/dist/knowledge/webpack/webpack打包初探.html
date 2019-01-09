@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webpack使用初探 | Blog</title>
+    <meta name="description" content="只有渴求进步的人才会进步">
+    <link rel="icon" href="/vuepress-blog/icon/myBook.png">
+  <link rel="manifest" href="/vuepress-blog/manifest.json">
+    
+    <link rel="preload" href="/vuepress-blog/assets/css/0.styles.d5f88fb4.css" as="style"><link rel="preload" href="/vuepress-blog/assets/js/app.9d810a9e.js" as="script"><link rel="preload" href="/vuepress-blog/assets/js/22.3142744d.js" as="script"><link rel="prefetch" href="/vuepress-blog/assets/js/10.3c66b935.js"><link rel="prefetch" href="/vuepress-blog/assets/js/11.85a777c4.js"><link rel="prefetch" href="/vuepress-blog/assets/js/12.9dcb4ecf.js"><link rel="prefetch" href="/vuepress-blog/assets/js/13.95fef4bd.js"><link rel="prefetch" href="/vuepress-blog/assets/js/14.8df88b73.js"><link rel="prefetch" href="/vuepress-blog/assets/js/15.34665ef8.js"><link rel="prefetch" href="/vuepress-blog/assets/js/16.000b0f3c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/17.2c13cfbc.js"><link rel="prefetch" href="/vuepress-blog/assets/js/18.37541b23.js"><link rel="prefetch" href="/vuepress-blog/assets/js/19.16d4a585.js"><link rel="prefetch" href="/vuepress-blog/assets/js/2.b5eed2c0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/20.64610df3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/21.1d56dda5.js"><link rel="prefetch" href="/vuepress-blog/assets/js/23.b61b892b.js"><link rel="prefetch" href="/vuepress-blog/assets/js/24.0dd7f4d1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/25.5fd325f3.js"><link rel="prefetch" href="/vuepress-blog/assets/js/26.220e010c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/27.e12e736c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/28.ab104a43.js"><link rel="prefetch" href="/vuepress-blog/assets/js/3.4a53c04e.js"><link rel="prefetch" href="/vuepress-blog/assets/js/4.f530c4b0.js"><link rel="prefetch" href="/vuepress-blog/assets/js/5.c2ec794c.js"><link rel="prefetch" href="/vuepress-blog/assets/js/6.6516bf19.js"><link rel="prefetch" href="/vuepress-blog/assets/js/7.942a0eb1.js"><link rel="prefetch" href="/vuepress-blog/assets/js/8.5c62ad48.js"><link rel="prefetch" href="/vuepress-blog/assets/js/9.c67eca36.js">
+    <link rel="stylesheet" href="/vuepress-blog/assets/css/0.styles.d5f88fb4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress-blog/" class="home-link router-link-active"><!----> <span class="site-name">Blog</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/html&amp;css/" class="nav-link">html&amp;css</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/js/" class="nav-link">js</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/webpack/" class="nav-link router-link-active">webpack</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/linux/" class="nav-link">linux</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/project/" class="nav-link">项目</a></div><div class="nav-item"><a href="/vuepress-blog/otherTips/" class="nav-link">杂谈</a></div><div class="nav-item"><a href="/vuepress-blog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="https://github.com/ChenSimin0103" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vuepress-blog/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">知识</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/html&amp;css/" class="nav-link">html&amp;css</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/js/" class="nav-link">js</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/webpack/" class="nav-link router-link-active">webpack</a></li><li class="dropdown-item"><!----> <a href="/vuepress-blog/knowledge/linux/" class="nav-link">linux</a></li></ul></div></div><div class="nav-item"><a href="/vuepress-blog/project/" class="nav-link">项目</a></div><div class="nav-item"><a href="/vuepress-blog/otherTips/" class="nav-link">杂谈</a></div><div class="nav-item"><a href="/vuepress-blog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="https://github.com/ChenSimin0103" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/vuepress-blog/knowledge/webpack/webpack打包初探.html" class="active sidebar-link">webpack打包初探</a><ul class="sidebar-sub-headers"></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h3 id="想法"><a href="#想法" aria-hidden="true" class="header-anchor">#</a> 想法</h3> <p>webpack是目前最流行的项目打包工具，看起来好用就是不会用，相信很多朋友都有和我一样看到vue-cli脚手架里花里胡哨的配置懵逼的经历，从来都不敢去改，生怕改了一点就原地爆炸哦，可能有很多配置是用不上的，这样的话，不说理解打包过程，就有单纯的使用也有点困难。</p> <p>现在想要把多个vue组件打包并通过import引入使用（一次打包多个组件一次引入使用，就像element一样），我这里想尝试<font color="#00ffff" size="3">从头到尾演示一遍打包的过程，过程中尽量简化操作和配置，</font>并记录细节问题。</p> <h3 id="思路"><a href="#思路" aria-hidden="true" class="header-anchor">#</a> 思路</h3> <p>还是撘起vue的脚手架工程vue-cli，只不过不使用默认的打包命令，自定义一个脚本命令，写一个webpack打包的配置项，然后就可以打包完成了，当然最后要验证一下好不好用</p> <h3 id="开始吧"><a href="#开始吧" aria-hidden="true" class="header-anchor">#</a> 开始吧</h3> <p>第一步： 单独建了一个文件夹，在里面完成打包操作，外面跑起工程引用打包好的文件，方便验证：</p> <p><img src="https://chensimin0103.github.io/ChenSimin.github.io/img/res/20181009-%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.jpg" alt="avatar"></p> <p>因为包管理工具是npm，内容要符合npm规范，在此路径下先执行<code>npm init</code>，填入一些必要配置，之后会生成一份package.json文件</p> <p><img src="https://chensimin0103.github.io/ChenSimin.github.io/img/res/20181009-npm%E5%8C%85%E5%88%9D%E5%A7%8B%E5%8C%96.jpg" alt="avatar"></p> <p>package.json 需要添加的几项依赖：</p> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.4.4&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;babel-core&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.26.0&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;babel-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.1.2&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;babel-preset-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.6.0&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;babel-preset-stage-3&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.24.1&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;cross-env&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.0.5&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;css-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^0.28.7&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;file-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.1.4&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;node-sass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.5.3&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;sass-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.0.6&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;vue-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^13.0.5&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;vue-template-compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.4.4&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;webpack&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.6.0&quot;</span><span class="token punctuation">,</span>
+ <span class="token property">&quot;webpack-dev-server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.9.1&quot;</span>
+</code></pre></div><p>脚本命令这样写吧</p> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --config webpack.config.js&quot;</span>
+</code></pre></div><p>还需要修改下打包之后工程的入口配置，设置为打包之后的js文件，注意这里文件名及路径和之后的webpack打包配置有关</p> <div class="language-json extra-class"><pre class="language-json"><code> <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;dist/demo.js&quot;</span><span class="token punctuation">,</span>
+</code></pre></div><p>运行 <code>npm install</code> ，安装项目依赖</p> <p>第二步： 在src/components目录下写两个简单的vue组件，注意要添加name属性，内容随便写一写（这里markdown引入vue代码段有问题 -_-|| ）：</p> <p>第一个vue文件：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>      <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>p <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;me&quot;</span><span class="token operator">&gt;</span>这是一个想要被打包出来的vue组件<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+      <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'demo'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+      <span class="token punctuation">.</span>me <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+</code></pre></div><p>第二个vue文件：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>      <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>p <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;hello&quot;</span><span class="token operator">&gt;</span>这是第二个想要被打包出来的vue组件<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+      <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'demo2'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+      <span class="token punctuation">.</span>hello <span class="token punctuation">{</span>
+        color<span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+</code></pre></div><p>因为我们期望的使用方法是将所有组件打包成一个插件，并通过一次Vue.use()来使用，必需提供一个install方法（参见<a href="https://cn.vuejs.org/v2/api/#Vue-use" target="_blank" rel="noopener noreferrer">vue.js全局api之Vue.use<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>），在其中使用Vue.component()来将我们的组件注册为Vue的全局组件，</p> <p>在 index.js 中做这件事：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">import</span> vueDemo <span class="token keyword">from</span> <span class="token string">'./components/demo'</span><span class="token punctuation">;</span>
+  <span class="token keyword">import</span> vueDemo2 <span class="token keyword">from</span> <span class="token string">'./components/demo2'</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> demo <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token function">install</span><span class="token punctuation">(</span>Vue<span class="token punctuation">,</span> options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>vueDemo2<span class="token punctuation">.</span>name<span class="token punctuation">,</span> vueDemo2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>vueDemo<span class="token punctuation">.</span>name<span class="token punctuation">,</span> vueDemo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 以 &lt;script&gt; 标签形式使用组件时做的特殊处理</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> window <span class="token operator">!==</span> <span class="token string">'undefined'</span> <span class="token operator">&amp;&amp;</span> window<span class="token punctuation">.</span>Vue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>demo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">export</span> <span class="token keyword">default</span> demo<span class="token punctuation">;</span>
+</code></pre></div><p>在 webpack.config.js 中定义一份简化的webpack配置：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+
+  module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token punctuation">:</span> <span class="token string">'./src/index.js'</span><span class="token punctuation">,</span> <span class="token comment">//打包 插件入口</span>
+    output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 输出路径及文件名</span>
+      path<span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./dist'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      publicPath<span class="token punctuation">:</span> <span class="token string">'/dist/'</span><span class="token punctuation">,</span>
+      filename<span class="token punctuation">:</span> <span class="token string">'demo.js'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 支持多种模块系统</span>
+      library<span class="token punctuation">:</span><span class="token string">'demo'</span><span class="token punctuation">,</span>
+      libraryTarget<span class="token punctuation">:</span><span class="token string">'umd'</span><span class="token punctuation">,</span>
+      umdNamedDefine<span class="token punctuation">:</span><span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+          use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+            <span class="token string">'css-loader'</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.scss$/</span><span class="token punctuation">,</span>
+          use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token string">'vue-style-loader'</span><span class="token punctuation">,</span>
+            <span class="token string">'css-loader'</span><span class="token punctuation">,</span>
+            <span class="token string">'sass-loader'</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.vue$/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'vue-loader'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'babel-loader'</span><span class="token punctuation">,</span>
+          exclude<span class="token punctuation">:</span> <span class="token regex">/node_modules/</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.(png|jpg|gif|svg)$/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'file-loader'</span><span class="token punctuation">,</span>
+          options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            name<span class="token punctuation">:</span> <span class="token string">'[name].[ext]?[hash]'</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      loaders<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+          exclude<span class="token punctuation">:</span> <span class="token regex">/(node_modules|bower_components)/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'babel'</span><span class="token punctuation">,</span>
+          query<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            presets<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'es2015'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    resolve<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      alias<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">'vue$'</span><span class="token punctuation">:</span> <span class="token string">'vue/dist/vue.esm.js'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      extensions<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'*'</span><span class="token punctuation">,</span> <span class="token string">'.js'</span><span class="token punctuation">,</span> <span class="token string">'.vue'</span><span class="token punctuation">,</span> <span class="token string">'.json'</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>第三步： 开始打包</p> <p>运行打包命令 <code>npm run build</code>，之后可以看到目录下多了这个文件：</p> <p><img src="https://chensimin0103.github.io/ChenSimin.github.io/img/res/20181009-%E6%8F%92%E4%BB%B6%E6%89%93%E5%8C%85%E4%B9%8B%E5%90%8E.jpg" alt="avatar"></p> <p>再通过正常引入使用组件的方式来用，在vue工程中的main.js文件里，实例Vue的代码之前添加：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token keyword">import</span> demo <span class="token keyword">from</span> <span class="token string">'./componentsPackage'</span>
+  Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>demo<span class="token punctuation">)</span>
+</code></pre></div><p>这样就把我们打包好的插件挂到了Vue实例上，之后就可以在任意vue文件里通过引入标签的方式使用组件，比如这样：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  <span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>demo<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>demo<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>demo2<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>demo2<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+</code></pre></div><p>效果：</p> <p><img src="https://chensimin0103.github.io/ChenSimin.github.io/img/res/20181009-%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C.jpg" alt="avatar"></p> <p>下一步，再写个README吧，就可以尝试把打包完的组件发布在npm上，给其他开发者下载使用，嗯。</p> <blockquote><p><a href="https://github.com/ChenSimin0103/Demo/tree/master/webpack%E6%89%93%E5%8C%85%E5%88%9D%E6%8E%A2%20demo" target="_blank" rel="noopener noreferrer">这里有完整的代码示例<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/vuepress-blog/assets/js/app.9d810a9e.js" defer></script><script src="/vuepress-blog/assets/js/22.3142744d.js" defer></script>
+  </body>
+</html>
