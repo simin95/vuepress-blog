@@ -29,6 +29,7 @@ module.exports = {
           { text: 'node', link: '/knowledge/node/' },
           { text: 'webpack', link: '/knowledge/webpack/' },
           { text: 'linux', link: '/knowledge/linux/' },
+          { text: '算法', link: '/knowledge/algorithm/' },
         ],
       },
       { text: '项目', link: '/project/' },
@@ -44,6 +45,7 @@ module.exports = {
           title: 'html&css', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
+            ['/knowledge/html&css/使用flex布局', '使用flex布局'],
           ],
         },
       ],
@@ -57,6 +59,13 @@ module.exports = {
             ['/knowledge/js/js基础_正确的使用Promise和async', 'js基础_正确的使用Promise和async'],
             ['/knowledge/js/js基础_原型和继承', 'js基础_原型和继承'],
             ['/knowledge/js/js基础_深拷贝', 'js基础_深拷贝'],
+          ],
+        },
+        {
+          title: '关于promise',
+          collapsable: true,
+          children: [
+            ['/knowledge/js/手写promise','手写promise'],
           ],
         },
       ],
@@ -96,6 +105,16 @@ module.exports = {
           collapsable: true, // 可折叠
           children: [
             ['/knowledge/linux/linux基本操作', 'linux基本操作'],
+          ],
+        },
+      ],
+
+      '/knowledge/algorithm/': [
+        {
+          title: '一些基础算法', // 侧边栏名称
+          collapsable: true, // 可折叠
+          children: [
+            ['/knowledge/linux/algorithm', 'algorithm'],
           ],
         },
       ],

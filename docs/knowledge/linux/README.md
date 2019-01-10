@@ -15,3 +15,9 @@ footer: MIT Licensed | Copyright ©        2018-present simin
  
 linux 学习参考资料：
 [命令行的艺术](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)
+
+学些一下批处理脚本： 编写.bat 文件
+
+(〃'▽'〃)
+
+do

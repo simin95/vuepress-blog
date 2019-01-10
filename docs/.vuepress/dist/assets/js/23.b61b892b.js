@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{172:function(t,n,s){"use strict";s.r(n);var e=s(0),i=Object(e.a)({},function(){var t=this.$createElement,n=this._self._c||t;return n("div",{staticClass:"content"},[n("show"),this._v("\n这是杂谈")],1)},[],!1,null,null,null);i.options.__file="README.md";n.default=i.exports}}]);
