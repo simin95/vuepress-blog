@@ -65,6 +65,7 @@ module.exports = {
           title: '关于promise',
           collapsable: true,
           children: [
+            ['/knowledge/js/手写promise_使用class','手写promise_使用class'],
             ['/knowledge/js/手写promise','手写promise'],
           ],
         },
