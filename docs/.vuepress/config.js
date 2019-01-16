@@ -143,6 +143,7 @@ module.exports = {
             ['/otherTips/RSA加密算法初探', 'RSA加密算法初探'],
             ['/otherTips/markdown的语法总结', 'markdown的语法总结'],
             ['/otherTips/组件的设计规范', '组件的设计规范'],
+            ['/otherTips/智能家居设备配网逻辑', '智能家居设备配网逻辑'],
           ],
         },
       ],

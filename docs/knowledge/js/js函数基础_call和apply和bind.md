@@ -40,7 +40,7 @@ delete o.tempf;
 
    ```javascript
    f.call(o, 1, 2, 3);
-   f.call(o, [1, 2, 3]);
+   f.apply(o, [1, 2, 3]);
    // 等同于：
    o.tempf = f;
    o.tempf(1, 2, 3);
