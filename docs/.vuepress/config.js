@@ -115,7 +115,7 @@ module.exports = {
           title: '一些基础算法', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
-            ['/knowledge/linux/algorithm', 'algorithm'],
+            ['/knowledge/algorithm/快速排序', '快速排序'],
           ],
         },
       ],
