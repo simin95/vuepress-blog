@@ -30,6 +30,7 @@ module.exports = {
           { text: 'webpack', link: '/knowledge/webpack/' },
           { text: 'linux', link: '/knowledge/linux/' },
           { text: '算法', link: '/knowledge/algorithm/' },
+          { text: '网络', link: '/knowledge/network/' },
         ],
       },
       { text: '项目', link: '/project/' },
@@ -59,6 +60,7 @@ module.exports = {
             ['/knowledge/js/js基础_正确的使用Promise和async', 'js基础_正确的使用Promise和async'],
             ['/knowledge/js/js基础_原型和继承', 'js基础_原型和继承'],
             ['/knowledge/js/js基础_深拷贝', 'js基础_深拷贝'],
+            ['/knowledge/js/函数节流和防抖', '函数节流和防抖'],
           ],
         },
         {
@@ -119,6 +121,16 @@ module.exports = {
           ],
         },
       ],
+      '/knowledge/network/': [
+        {
+          title: '一些网络知识', // 侧边栏名称
+          collapsable: true, // 可折叠
+          children: [
+            ['/knowledge/algorithm/跨域及其解决方式', '跨域及其解决方式'],
+          ],
+        },
+      ],
+
 
       '/project/': [
         {
