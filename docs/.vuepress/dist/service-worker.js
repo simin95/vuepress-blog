@@ -21,19 +21,19 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "46fce60fa512a3c585f9660747d29277"
+    "revision": "d1f3ad546f33b209b54f5fb2eb4d5722"
   },
   {
     "url": "about/index.html",
-    "revision": "da3a4c8824d9046cd92c428540fb9194"
+    "revision": "dee168391bddfe72ccb88201ff2c3eb7"
   },
   {
     "url": "about/q.html",
-    "revision": "755892c0918fbad84fa28a12fed06ed4"
+    "revision": "185920b1ea09e8fee66ded060992c717"
   },
   {
     "url": "about/w.html",
-    "revision": "f64fdef387424f9b5d0a7a2c0a982453"
+    "revision": "82222faaaa2d2e4a69bf20ace34251ac"
   },
   {
     "url": "assets/css/0.styles.d5f88fb4.css",
@@ -52,8 +52,8 @@ self.__precacheManifest = [
     "revision": "0d5a13facccc215a693aadd253e87633"
   },
   {
-    "url": "assets/js/12.0705f29c.js",
-    "revision": "1a1b3991cd44cb1dad3a47cd3191413b"
+    "url": "assets/js/12.8b9defa9.js",
+    "revision": "2030ec6652bc2ad5676ab31e068fb148"
   },
   {
     "url": "assets/js/13.a0e9790c.js",
@@ -200,8 +200,8 @@ self.__precacheManifest = [
     "revision": "8a5bb8be488f1dfa0a5cf952ff6c16cb"
   },
   {
-    "url": "assets/js/app.7810e517.js",
-    "revision": "4e723800cfbaf58c10b66afca501f4d6"
+    "url": "assets/js/app.37b3d329.js",
+    "revision": "71a553c9c8bffc8c291acdd6dba8fd22"
   },
   {
     "url": "icons/myBook.png",
@@ -209,135 +209,135 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "2057666bbd682b87413d41cef2bae464"
+    "revision": "da6490391d75f6474cab812f55232267"
   },
   {
     "url": "knowledge/algorithm/index.html",
-    "revision": "1be2d992d4b6abd6e8ae6e0fe4ecb399"
+    "revision": "3d1eb84820d196b8f5275b287d9d3aa1"
   },
   {
     "url": "knowledge/algorithm/快速排序.html",
-    "revision": "edcf6304fe305a89f04ebe4c2192db37"
+    "revision": "d91fdbd34d671071bb8ecfb5060fad19"
   },
   {
     "url": "knowledge/html&css/index.html",
-    "revision": "64113296d217158083f7ac49b225e485"
+    "revision": "06c8021f2df4399c9ca01fb9574a47d3"
   },
   {
     "url": "knowledge/html&css/使用flex布局.html",
-    "revision": "8eca2ca7b49f3a7f2dc684e775d56d57"
+    "revision": "d608a712fd07a2185229fd5b2ede652b"
   },
   {
     "url": "knowledge/index.html",
-    "revision": "8501f07bd5c7028fc1e33c14b2a46e20"
+    "revision": "d6e7aa65720f85f6ada31f08e3803d2d"
   },
   {
     "url": "knowledge/js/index.html",
-    "revision": "cba19ba5afc2b09de8538ce7ccf657ab"
+    "revision": "0902331a807151c16f344fd27ef6dc11"
   },
   {
     "url": "knowledge/js/js函数基础_call和apply和bind.html",
-    "revision": "a96585367f23cfce277b1c51c84cdebf"
+    "revision": "fe014ab0f71fb6c19266c9f384dcc60e"
   },
   {
     "url": "knowledge/js/js基础_原型和继承.html",
-    "revision": "c10a088da64c2e987a7fead78e32346a"
+    "revision": "7ce05e2d56a9a0c84565703782d78e5b"
   },
   {
     "url": "knowledge/js/js基础_正确的使用Promise和async.html",
-    "revision": "edf683c99d5e3d52ada9fddfe18a6d6e"
+    "revision": "cde2e791ea3367eece49c5aa25a0adab"
   },
   {
     "url": "knowledge/js/js基础_深拷贝.html",
-    "revision": "74fdd84eecbab870b5b24e8c02671882"
+    "revision": "5f53af7325d6f50ad2958d30c6067774"
   },
   {
     "url": "knowledge/js/函数节流和防抖.html",
-    "revision": "00e2409693b8df103ce23bf075f5405e"
+    "revision": "949ab9920f47796127076f007214bea3"
   },
   {
     "url": "knowledge/js/手写promise_使用class.html",
-    "revision": "b6a51c8b86e595624ace9d9fccfca6b4"
+    "revision": "489711ce07d9566d87f8a1bdfe13d538"
   },
   {
     "url": "knowledge/js/手写promise.html",
-    "revision": "7492b7c9aa74553e4d77ba36a4bdf75f"
+    "revision": "470c6d3355c4018d36ed5adb0660df9b"
   },
   {
     "url": "knowledge/linux/index.html",
-    "revision": "16ac7b597fb4e0e912a8b8dc58ec3de5"
+    "revision": "88bb54126150fdfcc682340dce7bf3fa"
   },
   {
     "url": "knowledge/linux/linux基本操作.html",
-    "revision": "14e5057e00d4986bb87c172a6d6b3050"
+    "revision": "cda14d58f4c4d08f1b3880f74a08d9bf"
   },
   {
     "url": "knowledge/node/index.html",
-    "revision": "bf8ed387e230edc44aa9d173e6243abe"
+    "revision": "0e3a2919c0a5199c941b313d167a4998"
   },
   {
     "url": "knowledge/node/使用express+mongoDB.html",
-    "revision": "1a82246566bb9c9442b0044ca4db89f5"
+    "revision": "30df6ae3eab38035520e6cd66292c19c"
   },
   {
     "url": "knowledge/vue/index.html",
-    "revision": "9870b81ae9a40cc1c298535a5dcbd99d"
+    "revision": "56d6f8a0d329438623c1946a4f4bd203"
   },
   {
     "url": "knowledge/vue/尝试 vue-cli 3.html",
-    "revision": "e096e7aae3b97c540f65084949cd5a7b"
+    "revision": "dd53d5601976cafd9fb3184cd72efab5"
   },
   {
     "url": "knowledge/vue/手撸一个简易MVVM模型.html",
-    "revision": "9290d7d873b32ac9048d21a6cd70a7b9"
+    "revision": "90e8d68626b6a3d577ce807b07b19dda"
   },
   {
     "url": "knowledge/vue/用于vue组件间传值的其他黑科技.html",
-    "revision": "0b848924341c43aceb3fee9a962548cf"
+    "revision": "d334b5b7df03b1a5923588da2be5e46a"
   },
   {
     "url": "knowledge/vue/组件化设计方法论.html",
-    "revision": "15a8487057d1b06e9275cb9d027035c9"
+    "revision": "8784d041a6221e5e780803e4b749cb06"
   },
   {
     "url": "knowledge/webpack/index.html",
-    "revision": "f63d64269d63cb4748c6b2846b66b246"
+    "revision": "c2a6a04d715604b19d06712316d5e006"
   },
   {
     "url": "knowledge/webpack/webpack打包初探.html",
-    "revision": "b53a5515dc2eb9be2fe6a02ab5760680"
+    "revision": "e0faeaf7cded7ed0581a665015078390"
   },
   {
     "url": "otherTips/cdn是什么.html",
-    "revision": "52e58632c4155014a77558297a8f078b"
+    "revision": "f26ed84a6674fd3ddf25f6f02ef56b9b"
   },
   {
     "url": "otherTips/docker是什么.html",
-    "revision": "20f43f6185df06e1ee36c7cc721c8772"
+    "revision": "0a028e48428ad99c8f0c9ce3a52a6273"
   },
   {
     "url": "otherTips/index.html",
-    "revision": "981121f8a9603e478685d11746105f9c"
+    "revision": "3580e1657dc38fa499117b94fd941b15"
   },
   {
     "url": "otherTips/markdown的语法总结.html",
-    "revision": "da749f0938fd7e7be3bf8cca39dcffb2"
+    "revision": "9e750282c45705b7845c88a03cda7520"
   },
   {
     "url": "otherTips/RSA加密算法初探.html",
-    "revision": "361971f3736a79479fc964aea6f96a67"
+    "revision": "06652fc81f1f413c83acf6e8585c8f6c"
   },
   {
     "url": "otherTips/智能家居设备配网逻辑.html",
-    "revision": "bf72f8fcb6c6af90c63d75f2629cfb8a"
+    "revision": "86ca77197004f9b96c5c6fcaadea2265"
   },
   {
     "url": "otherTips/组件的设计规范.html",
-    "revision": "ce0867d2f87d67c8cebba4f934721b82"
+    "revision": "b596f59ad3755a8a0f65c92b4741b9b1"
   },
   {
     "url": "project/index.html",
-    "revision": "5ecf7f02d6c84adf1c2b41fc585a46be"
+    "revision": "8d5df295f0cc0e318811adb9ab61c38a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
