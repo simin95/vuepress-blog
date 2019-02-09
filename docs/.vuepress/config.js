@@ -23,7 +23,7 @@ module.exports = {
         link: '/knowledge/',
         // 在此处配置所有的博客路径
         items: [
-          { text: 'html&css', link: '/knowledge/html&css/' },
+          { text: 'html&css', link: '/knowledge/htmlcss/' },
           { text: 'js', link: '/knowledge/js/' },
           { text: 'vue', link: '/knowledge/vue/' },
           { text: 'node', link: '/knowledge/node/' },
@@ -41,12 +41,12 @@ module.exports = {
     // 侧边栏配置，每添加一篇博客就配置一下这里，处理单位是文件夹
     // 注意了：文件名不要含有 ：，这些标准之外的符号，使用下划线或驼峰来写
     sidebar: {
-      '/knowledge/html&css/': [
+      '/knowledge/htmlcss/': [
         {
           title: 'html&css', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
-            ['/knowledge/html&css/使用flex布局', '使用flex布局'],
+            ['/knowledge/htmlcss/使用flex布局', '使用flex布局'],
           ],
         },
       ],
@@ -126,7 +126,7 @@ module.exports = {
           title: '一些网络知识', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
-            ['/knowledge/algorithm/跨域及其解决方式', '跨域及其解决方式'],
+            ['/knowledge/network/跨域及其解决方式', '跨域及其解决方式'],
           ],
         },
       ],
@@ -139,6 +139,7 @@ module.exports = {
           children: [
           ],
         },
+        
         {
           title: '项目2',
           collapsable: true,
