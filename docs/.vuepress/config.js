@@ -127,6 +127,8 @@ module.exports = {
           collapsable: true, // 可折叠
           children: [
             ['/knowledge/network/跨域及其解决方式', '跨域及其解决方式'],
+            ['/knowledge/network/懒加载和预加载', '懒加载和预加载'],
+            ['/knowledge/network/浏览器存储', '浏览器存储'],
           ],
         },
       ],
