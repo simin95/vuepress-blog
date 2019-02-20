@@ -79,6 +79,8 @@ module.exports = {
           collapsable: true, // 可折叠
           children: [
             ['/knowledge/vue/尝试 vue-cli 3', '尝试 vue-cli 3'],
+            ['/knowledge/vue/render函数', 'render函数'],
+            ['/knowledge/vue/用于vue组件间传值的其他黑科技', '用于vue组件间传值的其他黑科技'],
           ],
         },
       ],
