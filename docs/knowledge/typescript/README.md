@@ -1,1 +1,0 @@
-这是 typescript 相关 知识
