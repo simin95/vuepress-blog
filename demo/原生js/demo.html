@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <p>点击下面列表每个子项会alert它的index值</p>
+  <ul id="test" style="list-style: none">
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+  </ul>
+</body>
+<script>
+  $('#test li').click(function(e) {
+    console.log($(this).index())
+  })
+
+  // console.log(document.getElementById('test').getElementsByTagName('li')[0])
+
+  // document.getElementById('test').getElementsByTagName('li').forEach((v) => {
+  //   // v.addEventListener('click', function() {
+  //     console.log(v)
+  //   // })
+  // })
+
+</script>
+</html>
