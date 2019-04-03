@@ -26,6 +26,7 @@ module.exports = {
           { text: 'html&css', link: '/knowledge/htmlcss/' },
           { text: 'js', link: '/knowledge/js/' },
           { text: 'vue', link: '/knowledge/vue/' },
+          { text: 'react', link: '/knowledge/react/' },
           { text: 'node', link: '/knowledge/node/' },
           { text: 'webpack', link: '/knowledge/webpack/' },
           { text: 'linux', link: '/knowledge/linux/' },
@@ -63,7 +64,6 @@ module.exports = {
             ['/knowledge/js/函数节流和防抖', '函数节流和防抖'],
             ['/knowledge/js/eventLoop', 'eventLoop'],
             ['/knowledge/js/闭包的内在原理', '闭包的内在原理'],
-            ['/knowledge/js/redux使用指南', 'redux使用指南'],
           ],
         },
         {
@@ -97,17 +97,17 @@ module.exports = {
           collapsable: true, // 可折叠
           children: [
             ['/knowledge/react/diff算法', 'diff算法'],
-            ['/knowledge/react/使用redux', '使用redux'],
+            ['/knowledge/react/redux使用指南', 'redux使用指南'],
           ],
         },
       ],
 
       '/knowledge/node/': [
         {
-          title: 'node-js', // 侧边栏名称
+          title: 'nodejs', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
-            ['/knowledge/node/使用express+mongoDB', '使用express+mongoDB'],
+            ['/knowledge/node/使用express和mongoDB', '使用express和mongoDB'],
           ],
         },
       ],

@@ -14,12 +14,12 @@ tags: 总结
 3. 对于同一层级的一组子节点，它们可以通过唯一 id 进行区分。
 
 ### tree diff
-    对树进行分层比较，两棵树只会对同一层次的节点进行比较
+  对树进行分层比较，两棵树只会对同一层次的节点进行比较
 ### component diff
-    不同类型的两个组件将被直接替换，若开发者认为替换前后的组件结构相似，可以通过使用`shouldComponentUpdate()`来声明此组件不需要被直接替换，而是使用tree diff，以进一步而获取更好的性能
+  不同类型的两个组件将被直接替换，若开发者认为替换前后的组件结构相似，可以通过使用`shouldComponentUpdate()`来声明此组件不需要被直接替换，而是使用tree diff，以进一步而获取更好的性能
 
 ### element diff
-    当节点处于同一层级时，React diff 提供了三种节点操作: INSERT_MARKUP（插入）、MOVE_EXISTING（移动）和 REMOVE_NODE（删除）
+  当节点处于同一层级时，React diff 提供了三种节点操作: INSERT_MARKUP（插入）、MOVE_EXISTING（移动）和 REMOVE_NODE（删除）
   对同一层级的同组子节点，添加唯一 key 进行区分，以进行 移动，插入和删除操作
 
 ## 总结：
