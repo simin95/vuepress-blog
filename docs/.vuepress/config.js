@@ -62,6 +62,8 @@ module.exports = {
             ['/knowledge/js/js基础_深拷贝', 'js基础_深拷贝'],
             ['/knowledge/js/函数节流和防抖', '函数节流和防抖'],
             ['/knowledge/js/eventLoop', 'eventLoop'],
+            ['/knowledge/js/闭包的内在原理', '闭包的内在原理'],
+            ['/knowledge/js/redux使用指南', 'redux使用指南'],
           ],
         },
         {
@@ -89,11 +91,23 @@ module.exports = {
         },
       ],
 
+      '/knowledge/react/': [
+        {
+          title: 'react', // 侧边栏名称
+          collapsable: true, // 可折叠
+          children: [
+            ['/knowledge/react/diff算法', 'diff算法'],
+            ['/knowledge/react/使用redux', '使用redux'],
+          ],
+        },
+      ],
+
       '/knowledge/node/': [
         {
           title: 'node-js', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
+            ['/knowledge/node/使用express+mongoDB', '使用express+mongoDB'],
           ],
         },
       ],
@@ -139,6 +153,7 @@ module.exports = {
             ['/knowledge/network/浏览器存储', '浏览器存储'],
             ['/knowledge/network/http协议应知', 'http协议应知'],
             ['/knowledge/network/tcp与udp协议', 'tcp与udp协议'],
+            ['/knowledge/network/WebSocket', 'WebSocket'],
           ],
         },
       ],

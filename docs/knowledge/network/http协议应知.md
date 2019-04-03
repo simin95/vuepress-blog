@@ -8,6 +8,7 @@ tags: 总结
 
 ###  2xx（成功） 
 200 OK，表示从客户端发来的请求在服务器端被正确处理
+201 OK，表示资源被成功创建，一般是post的返回的http-header
 204 No content，表示请求成功，但响应报文不含实体的主体部分
 205 Reset Content，表示请求成功，但响应报文不含实体的主体部分，但是与 204 响应不同在于要求请求方重置内容
 206 Partial Content，进行范围请求
@@ -30,8 +31,10 @@ tags: 总结
 
 400 bad request           请求内容缺少必要信息
 401 unauthorized          未认证（登录）的请求
+402 
 403 forbidden             禁止访问
 404 not found             请求资源未找到（或其他原因）
+405 不允许此方法 
 
 ### 5xx（服务器错误）
 500 internal sever error，表示服务器端在执行请求时发生了错误
