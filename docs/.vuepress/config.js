@@ -64,6 +64,7 @@ module.exports = {
             ['/knowledge/js/函数节流和防抖', '函数节流和防抖'],
             ['/knowledge/js/eventLoop', 'eventLoop'],
             ['/knowledge/js/闭包的内在原理', '闭包的内在原理'],
+            ['/knowledge/js/js设计模式', 'js设计模式'],
           ],
         },
         {
