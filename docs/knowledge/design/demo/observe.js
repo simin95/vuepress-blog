@@ -1,12 +1,3 @@
----
-title: js设计模式 - 观察者模式
-date: 2019-04-8 16:30:00
-tags: 总结
----
-
-一个典型的观察者模式包含 subject(主题对象) 和 observe(观察者)
-
-``` JavaScript
 // 定义主题
 class Subject{
     // 主题内部保存/维护保存订阅者
@@ -42,9 +33,9 @@ class Observer {
     }
 }
 
-
 // 测试用例
 var subject = new Subject()
+
 //创建观察者1
 var observer1 = new Observer('hunger')
 //主题添加观察者1
@@ -53,11 +44,9 @@ subject.addObserver(observer1)
 var observer2 = new Observer('valley')
 //主题添加观察者2
 subject.addObserver(observer2)
+// subject.removeObserver(observer1)
 
 //主题通知所有的观察者更新
-subject.notify()
+console.log('start! ');
 
-// 输出：
-// hunger update
-// valley update
-```
+subject.notify()
