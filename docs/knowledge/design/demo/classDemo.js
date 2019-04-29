@@ -12,7 +12,7 @@ class Root {
   }
   // 添加 树枝节点 和 叶节点
   add(branch) {
-    this.sublist.add(branch);
+    this.sublist.push(branch);
   }
   // 获得 自己的 的信息
   getInfo() {
@@ -44,4 +44,6 @@ class Leaf {
   const b = new Leaf('小兵b', '普通员工', '6000');
   boss.add(a);
   boss.add(b);
+
+  boss.getAllInfo()
 })();

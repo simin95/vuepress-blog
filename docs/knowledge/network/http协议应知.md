@@ -34,7 +34,7 @@ tags: 总结
 402 
 403 forbidden             禁止访问
 404 not found             请求资源未找到（或其他原因）
-405 不允许此方法 
+405 method not allowed    不允许此方法 
 
 ### 5xx（服务器错误）
 500 internal sever error，表示服务器端在执行请求时发生了错误
