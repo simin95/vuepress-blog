@@ -88,6 +88,7 @@ module.exports = {
             ['/knowledge/vue/vue源码理解', 'vue源码理解'],
             ['/knowledge/vue/手撸一个简易MVVM模型', '手撸一个简易MVVM模型'],
             ['/knowledge/vue/组件化设计方法论', '组件化设计方法论'],
+            ['/knowledge/vue/开发vue插件', '开发vue插件'],
           ],
         },
       ],

@@ -1,22 +1,33 @@
 <template>
   <div>
-    hello there {{num}}
-    <button @click="add"></button>
+    <div class="message">
+      {{ message }}
+    </div>
+    Enter your username: <input v-model="username">
+    <div
+      v-if="error"
+      class="error"
+    >
+      Please enter a username with at least seven letters.
+    </div>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({
-  data() {
+<script>
+export default {
+  name: 'Foo',
+
+  data () {
     return {
-      num: 0
+      message: 'Welcome to the Vue.js cookbook',
+      username: ''
     }
   },
-  methods: {
-    add() {
-      this.num++
+
+  computed: {
+    error () {
+      return this.username.trim().length < 7
     }
   }
-})
+}
 </script>
