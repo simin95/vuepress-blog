@@ -9,7 +9,7 @@ module.exports = {
   serviceWorker: true,
 
   // base: '/',
-  base: '/vuepress-blog/',//当打包到vuepress-blog博客的时候才设置这个路径
+  base: '/',//当打包到vuepress-blog博客的时候才设置这个路径
   dist: './dist',
 
   // 使用自定义主题
