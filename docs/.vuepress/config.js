@@ -32,6 +32,7 @@ module.exports = {
           { text: 'linux', link: '/knowledge/linux/' },
           { text: '算法', link: '/knowledge/algorithm/' },
           { text: '网络', link: '/knowledge/network/' },
+          { text: 'docker', link: '/knowledge/docker/' },
         ],
       },
       { text: '项目', link: '/project/' },
@@ -156,6 +157,15 @@ module.exports = {
             ['/knowledge/network/http协议应知', 'http协议应知'],
             ['/knowledge/network/tcp与udp协议', 'tcp与udp协议'],
             ['/knowledge/network/WebSocket', 'WebSocket'],
+          ],
+        },
+      ],
+      '/knowledge/docker/': [
+        {
+          title: 'docker的使用', // 侧边栏名称
+          collapsable: true, // 可折叠
+          children: [
+            ['/knowledge/docker/使用docker部署前端工程最简版', '使用docker部署前端工程最简版'],
           ],
         },
       ],
