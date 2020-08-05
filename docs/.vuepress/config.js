@@ -173,9 +173,10 @@ module.exports = {
 
       '/project/': [
         {
-          title: '项目1', // 侧边栏名称
+          title: '权限中台的设计思路', // 侧边栏名称
           collapsable: true, // 可折叠
           children: [
+            ['/project/权限中台的设计思路', '权限中台的设计思路'],
           ],
         },
         
