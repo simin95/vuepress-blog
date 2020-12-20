@@ -1,4 +1,5 @@
 console.log("start---");
+
 var Lazyman = function(name) {
   const quene = [];
   const next = () => {
@@ -16,7 +17,6 @@ var Lazyman = function(name) {
   });
 
   return (api = {
-    _q: quene,
     sleepFirst(time) {
       quene.unshift(() => {
         setTimeout(() => {
@@ -36,6 +36,7 @@ var Lazyman = function(name) {
   });
 };
 
+// 测试用例
 Lazyman("Tom")
   .sleepFirst(3)
   .eat("lunch");
